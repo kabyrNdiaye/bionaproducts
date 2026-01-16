@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits | Bionaproduct - Catalogue Bio</title>
+    <meta name="description"
+        content="Explorez notre gamme complète de produits bio et naturels : huiles, savons, et soins pour le corps certifiés.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Restructured Header -->
+    <header id="main-header" class="scrolled">
+        <div class="container-fluid nav-container">
+            <div class="nav-left">
+                <a href="#" class="nav-icon"><i data-lucide="shopping-bag"></i></a>
+                <a href="#" class="nav-icon"><i data-lucide="user"></i></a>
+                <a href="#" class="nav-icon"><i data-lucide="search"></i></a>
+            </div>
+
+            <div class="nav-center">
+                <a href="index.html" class="logo-wrapper">
+                    <img src="assets/logo.png" alt="Biona Products Logo" class="main-logo">
+                </a>
+            </div>
+
+            <nav id="nav-menu" class="nav-right">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="products.html" class="active-link">Boutique</a></li>
+                    <li><a href="engagements.html">Engagements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="mobile-menu-toggle" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="boutique-hero reveal" style="background: url('assets/p3.jpeg') center/cover;">
+            <div class="hero-overlay" style="background: rgba(0,0,0,0.3);"></div>
+            <div class="container hero-content">
+                <span class="badge badge-outline"
+                    style="color: white; border-color: white; margin-bottom: 1rem;">Collection Exclusive</span>
+                <h1>L'Éclat Biona</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html" style="color: rgba(255,255,255,0.8);">Accueil</a> &nbsp;›&nbsp; <span
+                        class="current">Boutique</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="boutique-section">
+            <div class="container">
+                <!-- Top Category Filter -->
+                <div class="category-tabs reveal">
+                    <ul class="category-list-tabs">
+                        <li><a href="#" class="active" data-filter="tous">Tous</a></li>
+                        <li><a href="#" data-filter="crème">Crème Visage</a></li>
+                        <li><a href="#" data-filter="huile">Huile</a></li>
+                        <li><a href="#" data-filter="lait">Lait de Corps</a></li>
+                        <li><a href="#" data-filter="savon">Savon</a></li>
+                        <li><a href="#" data-filter="tampons">Tampons</a></li>
+                        <li><a href="#" data-filter="chantilly">Chantilly</a></li>
+                        <li><a href="#" data-filter="gommage">Gommage</a></li>
+                        <li><a href="#" data-filter="gamme">Gamme</a></li>
+                        <li><a href="#" data-filter="miracle">Miracle Power</a></li>
+                    </ul>
+                </div>
+
+                <div class="boutique-toolbar">
+                    <div class="results-count">Affichage de 26 résultat(s)</div>
+                    <div class="toolbar-actions">
+                        <div class="sort-wrapper">
+                            <select class="sort-select">
+                                <option value="default">Tri par défaut</option>
+                                <option value="popularity">Tri par popularité</option>
+                                <option value="rating">Tri par notes moyennes</option>
+                                <option value="newness">Tri du plus récent au plus ancien</option>
+                                <option value="price-asc">Tri par tarif croissant</option>
+                                <option value="price-desc">Tri par tarif décroissant</option>
+                            </select>
+                        </div>
+                        <div class="view-toggles">
+                            <button class="view-btn active"><i data-lucide="layout-grid"></i></button>
+                            <button class="view-btn"><i data-lucide="list"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-3-cols" id="product-grid">
+                    <!-- Product 1: Creme Visage -->
+                    <div class="product-card reveal" data-price="7000" data-category="crème" data-popularity="85"
+                        data-date="2025-12-01">
+                        <div class="product-img">
+                            <img src="assets/image5.jpeg" alt="Crème Éclat">
+                            <span class="product-tag">Crème Visage</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Crème Éclat Visage</h3>
+                            <p>Soin régénérant pour une mine radieuse chaque matin.</p>
+                            <span class="price">7 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Crème de Jour -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="9500"
+                        data-category="crème" data-popularity="88" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/image8.jpeg" alt="Crème de Jour">
+                            <span class="product-tag">Crème Visage</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Crème de Jour Hydratante</h3>
+                            <p>Soin quotidien protecteur pour une peau souple et hydratée.</p>
+                            <span class="price">9 500 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product 2: Tampons -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="15000"
+                        data-category="tampons" data-popularity="60" data-date="2025-11-15">
+                        <div class="product-img">
+                            <img src="assets/a4.jpeg" alt="Tampons Nettoyants">
+                            <span class="product-tag">Tampons Nettoyants</span>
+                            <span class="status-badge out-of-stock">Rupture de Stock</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Tampons Bio Nettoyants</h3>
+                            <p>Doux et écologiques, parfaits pour un démaquillage respectueux.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product 3: Huile Corps -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="10000"
+                        data-category="huile" data-popularity="95" data-date="2026-01-10">
+                        <div class="product-img">
+                            <img src="assets/a3.jpeg" alt="Huile Divine">
+                            <span class="product-tag">Huile</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Huile Divine Biona</h3>
+                            <p>Une huile corporelle d'exception pour une peau nourrie et satinée.</p>
+                            <span class="price">10 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Lait de Corps Signature -->
+                    <div class="product-card reveal" data-price="30000" data-category="lait" data-popularity="98"
+                        data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/image20.jpeg" alt="Lait de Corps Signature">
+                            <span class="product-tag">Lait de Corps</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Lait de Corps Signature Biona</h3>
+                            <p>Soin d'exception pour une peau sublimée et intensément nourrie.</p>
+                            <span class="price">30 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Savon de Papaye -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="15000"
+                        data-category="savon" data-popularity="90" data-date="2026-01-05">
+                        <div class="product-img">
+                            <img src="assets/image12.jpeg" alt="Savon Papaye">
+                            <span class="product-tag">Savon</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Savon de Papaye</h3>
+                            <p>Éclaircit naturellement le teint pour une peau unifiée et lumineuse.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product 6: Serum -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="15000"
+                        data-category="crème" data-popularity="75" data-date="2025-12-15">
+                        <div class="product-img">
+                            <img src="assets/image11.jpeg" alt="Crème Visage">
+                            <span class="product-tag">Crème Visage</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Crème Visage Éclat</h3>
+                            <p>Soin régénérant pour une mine radieuse chaque matin.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Savon Noir -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="15000"
+                        data-category="savon" data-popularity="65" data-date="2025-12-20">
+                        <div class="product-img">
+                            <img src="assets/image27.jpeg" alt="Savon Noir">
+                            <span class="product-tag">Savon</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Savon Noir Signature</h3>
+                            <p>Soin nettoyant profond aux vertus purifiantes ancestrales.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Huile de Teint -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="10000"
+                        data-category="huile" data-popularity="82" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/image7.jpeg" alt="Huile de Teint">
+                            <span class="product-tag">Huile</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Huile de Teint Éclat</h3>
+                            <p>Sublime votre carnation naturelle pour un fini satiné et radieux.</p>
+                            <span class="price">10 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Huile Soyeuse -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="10000"
+                        data-category="huile" data-popularity="85" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a11.jpeg" alt="Huile Soyeuse">
+                            <span class="product-tag">Huile</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Huile Soyeuse Biona</h3>
+                            <p>Une texture fine et pénétrante pour une peau veloutée.</p>
+                            <span class="price">10 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Savon Collagène -->
+                    <div class="product-card reveal" data-price="15000" data-category="savon" data-popularity="50"
+                        data-date="2025-08-15">
+                        <div class="product-img">
+                            <img src="assets/image33.jpeg" alt="Savon Collagène">
+                            <span class="product-tag">Savon</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Savon Collagène Biona</h3>
+                            <p>Raffermit et revitalise l'épiderme pour une peau visiblement plus jeune.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Savon Caviar -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="15000"
+                        data-category="savon" data-popularity="68" data-date="2025-07-20">
+                        <div class="product-img">
+                            <img src="assets/image29.jpeg" alt="Savon Caviar">
+                            <span class="product-tag">Savon</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Savon Caviar</h3>
+                            <p>Soin de luxe aux actifs régénérants pour une peau sublimée.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Gel de Douche -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="15000"
+                        data-category="savon" data-popularity="86" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/image21.jpeg" alt="Gel de Douche">
+                            <span class="product-tag">Savon</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gel de Douche Biona</h3>
+                            <p>Un moment de fraîcheur intense pour une peau purifiée et délicatement parfumée.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product 13: Coffret -->
+                    <div class="product-card reveal" data-price="45000" data-category="miracle" data-popularity="98"
+                        data-date="2026-01-15">
+                        <div class="product-img">
+                            <img src="assets/WhatsApp Image 2026-01-16 at 11.46.35.jpeg" alt="Miracle Power">
+                            <span class="product-tag">Miracle Power</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Coffret Découverte Biona</h3>
+                            <p>L'essentiel de nos soins réuni dans un écrin élégant.</p>
+                            <span class="price">45 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Chantilly Douceur -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="15000"
+                        data-category="chantilly" data-popularity="60" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/image2.jpeg" alt="Chantilly Douceur">
+                            <span class="product-tag">Chantilly Collagène</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Chantilly Douceur Florale</h3>
+                            <p>Une mousse onctueuse pour une hydratation aérienne et délicate.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Chantilly Karité -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="15000"
+                        data-category="chantilly" data-popularity="65" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a34.jpeg" alt="Chantilly Karité">
+                            <span class="product-tag">Chantilly Collagène</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Chantilly de Karité Pur</h3>
+                            <p>Nutrition intense au beurre de karité battu pour une peau satinée.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Chantilly Satinée -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="15000"
+                        data-category="chantilly" data-popularity="70" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a35.jpeg" alt="Chantilly Satinée">
+                            <span class="product-tag">Chantilly Collagène</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Chantilly Satinée Biona</h3>
+                            <p>Luxe et légèreté pour un fini velouté irrésistible.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Gommage Éclat -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="7000"
+                        data-category="gommage" data-popularity="75" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a.jpeg" alt="Gommage Éclat">
+                            <span class="product-tag">Gommage</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gommage Bio Éclat</h3>
+                            <p>Exfoliation délicate pour révéler l'éclat naturel de votre peau.</p>
+                            <span class="price">7 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Gommage Purifiant -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="7000"
+                        data-category="gommage" data-popularity="72" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a9.jpeg" alt="Gommage Purifiant">
+                            <span class="product-tag">Gommage</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gommage Purifiant Intense</h3>
+                            <p>Nettoyage en profondeur pour une peau lisse et débarrassée d'impuretés.</p>
+                            <span class="price">7 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Gommage Satin -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="7000"
+                        data-category="gommage" data-popularity="68" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a36.jpeg" alt="Gommage Satin">
+                            <span class="product-tag">Gommage</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gommage Corps Satin</h3>
+                            <p>Soin exfoliant gourmand pour une peau infiniment douce.</p>
+                            <span class="price">7 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Kit Visage 1 -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="35000"
+                        data-category="gamme" data-popularity="80" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a1.jpeg" alt="Kit Visage">
+                            <span class="product-tag">Gamme</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit Visage Biona</h3>
+                            <p>Soin complet pour un visage radieux et une peau parfaitement nettoyée.</p>
+                            <span class="price">35 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Kit Visage 2 -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="35000"
+                        data-category="gamme" data-popularity="82" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a2.jpeg" alt="Kit Visage">
+                            <span class="product-tag">Gamme</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit Visage Éclat</h3>
+                            <p>Formule enrichie pour un teint lumineux et une texture de peau affinée.</p>
+                            <span class="price">35 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Gamme Complet -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="35000"
+                        data-category="gamme" data-popularity="85" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/aa.jpeg" alt="Gamme Complet">
+                            <span class="product-tag">Gamme</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gamme Complet Biona</h3>
+                            <p>L'intégralité de notre expertise bio pour un rituel beauté sans compromis.</p>
+                            <span class="price">35 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Mini Gamme -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="45000"
+                        data-category="gamme" data-popularity="70" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/image3.jpeg" alt="Mini Gamme">
+                            <span class="product-tag">Gamme</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mini Gamme</h3>
+                            <p>Découvrez nos pépites beauté en format découverte pour une première expérience.</p>
+                            <span class="price">45 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: Kit 2 Visages -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;" data-price="16000"
+                        data-category="gamme" data-popularity="83" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a38.jpeg" alt="Kit 2 Visages">
+                            <span class="product-tag">Gamme</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit 2 Visages</h3>
+                            <p>Soin ciblé pour une peau rééquilibrée et un teint parfaitement unifié.</p>
+                            <span class="price">16 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product: La Gamme Biona -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;" data-price="66000"
+                        data-category="gamme" data-popularity="90" data-date="2026-01-16">
+                        <div class="product-img">
+                            <img src="assets/a37.jpeg" alt="La Gamme Biona">
+                            <span class="product-tag">Gamme</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>La Gamme Biona</h3>
+                            <p>L'excellence de nos soins réunis pour une transformation cutanée complète.</p>
+                            <span class="price">66 000 FCFA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Biona<span>Products</span></a>
+                    <p>Votre partenaire bien-être au quotidien, dans le respect total de la nature.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/biona_products/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Shared footer links -->
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="products.html">Produits</a></li>
+                        <li><a href="engagements.html">Engagements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i data-lucide="mail"></i> contact@bionaproduct.com</li>
+                        <li><i data-lucide="phone"></i> +221 77 169 30 11</li>
+                        <li><i data-lucide="map-pin"></i> Dakar, Sénégal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Biona Products. Tous droits réservés. <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Quick View Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close"><i data-lucide="x"></i></button>
+            <div class="modal-body-grid">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Produit">
+                </div>
+                <div class="modal-details">
+                    <span id="modal-tag" class="product-tag"></span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-desc"></p>
+                    <div class="modal-price" id="modal-price"></div>
+                    <div class="modal-actions">
+                        <a id="modal-whatsapp" href="#" target="_blank" class="btn btn-primary">
+                            <i data-lucide="message-circle"></i> Commander via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous | Bionaproduct - Service Client & FAQ</title>
+    <meta name="description"
+        content="Vous avez une question sur nos produits bio ? Contactez l'équipe Bionaproduct ou consultez notre FAQ.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-light);
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+        }
+
+        .faq-section {
+            margin-top: 50px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Restructured Header -->
+    <header id="main-header" class="scrolled">
+        <div class="container-fluid nav-container">
+            <div class="nav-left">
+                <a href="#" class="nav-icon"><i data-lucide="shopping-bag"></i></a>
+                <a href="#" class="nav-icon"><i data-lucide="user"></i></a>
+                <a href="#" class="nav-icon"><i data-lucide="search"></i></a>
+            </div>
+
+            <div class="nav-center">
+                <a href="index.html" class="logo-wrapper">
+                    <img src="assets/logo.png" alt="Biona Products Logo" class="main-logo">
+                </a>
+            </div>
+
+            <nav id="nav-menu" class="nav-right">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="products.html">Boutique</a></li>
+                    <li><a href="engagements.html">Engagements</a></li>
+                    <li><a href="contact.html" class="active-link">Contact</a></li>
+                </ul>
+                <button id="mobile-menu-toggle" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section mt-4">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h1 class="section-title">Contactez-nous</h1>
+                    <p class="section-subtitle">Notre équipe est à votre écoute pour vous conseiller.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="reveal-left">
+                        <div class="contact-form">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="name">Nom complet</label>
+                                    <input type="text" id="name" placeholder="Ex: Racky Aidara" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" placeholder="Ex: contact@bionaproducts.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Sujet</label>
+                                    <input type="text" id="subject" placeholder="Ex: Devenir revendeur">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" rows="5" placeholder="Écrivez-nous votre besoin ici..."
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-accent w-full" style="width: 100%;">Envoyer le
+                                    message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="reveal-right">
+                        <h3>Questions Fréquentes</h3>
+                        <div class="faq-section">
+                            <div class="faq-item">
+                                <div class="faq-question">Quels sont les délais de livraison ? <i
+                                        data-lucide="chevron-down"></i></div>
+                                <div class="faq-answer">Comptez 3 à 5 jours ouvrés pour tout le Sénégal.</div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">Vos produits sont-ils véganes ? <i
+                                        data-lucide="chevron-down"></i></div>
+                                <div class="faq-answer">95% de notre gamme est végane. Les 5% restants utilisent de la
+                                    cire d'abeille bio récoltée de manière éthique.</div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">Où trouver vos points de vente physiques ? <i
+                                        data-lucide="chevron-down"></i></div>
+                                <div class="faq-answer">Nous sommes présents dans plusieurs boutiques bio à Dakar et
+                                    Saint-Louis. Liste complète sur demande.</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h3 class="mb-1">Nos coordonnées</h3>
+                            <ul class="footer-contact" style="padding: 0;">
+                                <li style="margin-bottom: 10px;"><i data-lucide="mail" class="icon-green"></i>
+                                    contact@bionaproduct.com</li>
+                                <li style="margin-bottom: 10px;"><i data-lucide="phone" class="icon-green"></i> +221 77
+                                    169 30 11</li>
+                                <li><i data-lucide="map-pin" class="icon-green"></i> Dakar, Sénégal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Biona<span>Products</span></a>
+                    <p>Votre partenaire bien-être au quotidien, dans le respect total de la nature.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/biona_products/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="products.html">Produits</a></li>
+                        <li><a href="engagements.html">Engagements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i data-lucide="mail"></i> contact@bionaproduct.com</li>
+                        <li><i data-lucide="phone"></i> +221 77 169 30 11</li>
+                        <li><i data-lucide="map-pin"></i> Dakar, Sénégal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Biona Products. Tous droits réservés. <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

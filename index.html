@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bionaproduct | Produits Bio & Naturels pour votre Bien-être</title>
+    <meta name="description"
+        content="Découvrez Bionaproduct : des produits 100% bio et naturels, conçus pour votre santé et le respect de l'environnement.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Design Elements -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <button class="search-close"><i data-lucide="x"></i></button>
+        <div class="search-form-wrapper">
+            <form action="products.html" method="GET">
+                <input type="text" name="search" placeholder="Rechercher un produit, un soin..." autofocus>
+                <button type="submit"><i data-lucide="search"></i></button>
+            </form>
+            <div class="search-trending">
+                <p>Tendances :</p>
+                <div class="trending-tags">
+                    <a href="products.html?filter=savon">Savon Noir</a>
+                    <a href="products.html?filter=huile">Huile Divine</a>
+                    <a href="products.html?filter=beurre">Beurre de Karité</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Restructured Header (Matching Reference) -->
+    <header id="main-header">
+        <div class="container-fluid nav-container">
+            <!-- Left: Utility Icons -->
+            <div class="nav-left">
+                <a href="products.html" class="nav-icon" title="Boutique"><i data-lucide="shopping-bag"></i></a>
+                <a href="contact.html" class="nav-icon" title="Compte"><i data-lucide="user"></i></a>
+                <button id="search-toggle" class="nav-icon" aria-label="Rechercher"><i
+                        data-lucide="search"></i></button>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="nav-center">
+                <a href="index.html" class="logo-wrapper">
+                    <img src="assets/logo.png" alt="Biona Products Logo" class="main-logo">
+                </a>
+            </div>
+
+            <!-- Right: Navigation Links -->
+            <nav id="nav-menu" class="nav-right">
+                <ul>
+                    <li><a href="index.html" class="active-link">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="products.html">Boutique</a></li>
+                    <li><a href="engagements.html">Engagements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="mobile-menu-toggle" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Redesigned Split Hero Section -->
+        <section id="hero" class="split-hero">
+            <div class="hero-panel panel-left reveal-left">
+                <img src="assets/p6.jpeg" alt="Produit Bionaproducts">
+            </div>
+
+            <div class="hero-panel panel-center reveal">
+                <div class="hero-center-content">
+                    <span class="badge badge-outline">L'Essence du Sénégal</span>
+                    <h1>L'Art de <span>l'Éclat Pur</span></h1>
+                    <p>Découvrez une collection de soins bio d'exception, où chaque rituel célèbre la fusion entre
+                        traditions ancestrales et luxe naturel.</p>
+                    <a href="products.html" class="btn btn-dark">Découvrir la Collection</a>
+                </div>
+            </div>
+
+            <div class="hero-panel panel-right reveal-right">
+                <img src="assets/a10.jpg" alt="Fondatrice Bionaproducts">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="grid grid-2-cols items-center">
+                    <div class="about-image reveal-left">
+                        <div class="img-frame">
+                            <img src="assets/p1.jpeg" alt="Nos produits Bionaproducts">
+                        </div>
+                    </div>
+                    <div class="about-text reveal-right">
+                        <h2 class="section-title">La Vision de Racky</h2>
+                        <p class="lead">Passionnée par les secrets de beauté naturels du Sénégal, Racky Aidara a créé
+                            Bionaproducts pour sublimer chaque femme.</p>
+                        <p>Convaincue que la nature possède tout ce dont notre peau a besoin, j'ai formulé chaque lait,
+                            huile et savon avec des ingrédients purs et respectueux. Mon engagement : vous offrir une
+                            peau douce et nourrie sans aucun compromis.</p>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-green"></i>
+                                <span>Éco-responsable & Durable</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-green"></i>
+                                <span>Sans additifs chimiques</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-green"></i>
+                                <span>Respect de la biodiversité</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beauty Reveal Section -->
+        <section class="beauty-reveal">
+            <div class="reveal-panel left-panel" style="background-image: url('assets/a10.jpg');"></div>
+            <div class="reveal-panel right-panel" style="background-image: url('assets/p2.jpeg');"></div>
+
+            <div class="reveal-box reveal">
+                <h3>Révélez votre éclat naturel</h3>
+                <p>Offrez à votre peau l'excellence des rituels de soin Biona pour une transformation visible et
+                    éclatante.
+                </p>
+                <div class="trending-wrapper">
+                    <a href="products.html" class="trending-link">Tendances</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section light-bg">
+            <div class="container text-center">
+                <h2 class="section-title">Nos produits phares</h2>
+                <p class="section-subtitle">Une sélection exclusive de produits bons pour vous et la planète.</p>
+
+                <div class="grid grid-3-cols mt-4">
+                    <!-- Product 1: Creme de Visage -->
+                    <div class="product-card reveal">
+                        <div class="product-img">
+                            <img src="assets/image5.jpeg" alt="Crème Visage">
+                            <span class="product-tag">Crème Visage</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Crème Éclat Visage</h3>
+                            <p>Un soin régénérant qui redonne de la vitalité et un éclat naturel à votre visage.</p>
+                            <span class="price">7 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product 2: Tampons Nettoyants -->
+                    <div class="product-card reveal" style="transition-delay: 0.1s;">
+                        <div class="product-img">
+                            <img src="assets/a4.jpeg" alt="Tampons Nettoyants">
+                            <span class="product-tag">Nettoyant</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Tampons Bio Nettoyants</h3>
+                            <p>Doux et écologiques, parfaits pour un démaquillage respectueux de votre peau.</p>
+                            <span class="price">15 000 FCFA</span>
+                        </div>
+                    </div>
+                    <!-- Product 3: Huile -->
+                    <div class="product-card reveal" style="transition-delay: 0.2s;">
+                        <div class="product-img">
+                            <img src="assets/a3.jpeg" alt="Huile Corporelle">
+                            <span class="product-tag">Corps</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Huile Divine Biona</h3>
+                            <p>Une huile corporelle d'exception pour nourrir intensément et sublimer l'éclat de votre
+                                peau.</p>
+                            <span class="price">10 000 FCFA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engagements Section -->
+        <section id="engagements" class="section">
+            <div class="container text-center">
+                <h2 class="section-title">Nos engagements</h2>
+                <div class="grid grid-4-cols mt-4">
+                    <div class="engagement-item reveal">
+                        <div class="engagement-icon">
+                            <i data-lucide="leaf"></i>
+                        </div>
+                        <h3>Certifié Bio</h3>
+                        <p>Nos produits répondent aux normes les plus strictes de l'agriculture biologique.</p>
+                    </div>
+                    <div class="engagement-item reveal" style="transition-delay: 0.1s;">
+                        <div class="engagement-icon">
+                            <i data-lucide="droplet"></i>
+                        </div>
+                        <h3>Naturel</h3>
+                        <p>Ingrédients 100% naturels, sans paraben, sans sulfates, sans silicone.</p>
+                    </div>
+                    <div class="engagement-item reveal" style="transition-delay: 0.2s;">
+                        <div class="engagement-icon">
+                            <i data-lucide="recycle"></i>
+                        </div>
+                        <h3>Recyclable</h3>
+                        <p>Des emballages éco-conçus en verre ou plastique recyclé pour limiter les déchets.</p>
+                    </div>
+                    <div class="engagement-item reveal" style="transition-delay: 0.3s;">
+                        <div class="engagement-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <h3>Éthique</h3>
+                        <p>Une fabrication responsable respectant le travail et le bien-être animal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="appointment-section">
+            <div class="container">
+                <div class="appointment-grid">
+                    <div class="appointment-content reveal-left">
+                        <h2>Prendre <br>Rendez-vous ?</h2>
+                        <p>Besoin d'un conseil personnalisé ou envie de découvrir nos rituels de soin ? Notre équipe est
+                            à votre disposition pour vous accompagner dans votre routine beauté naturelle.</p>
+                        <p>Nos experts vous guident dans le choix des produits les plus adaptés à votre type de peau
+                            pour des résultats éclatants.</p>
+
+                        <div class="appointment-contact">
+                            <p>Appelez-nous : +221 77 169 30 11</p>
+                            <p>Ou remplissez notre formulaire de contact en ligne et nous vous rappellerons.</p>
+                        </div>
+
+                        <a href="contact.html" class="btn btn-dark">Prendre rendez-vous</a>
+                    </div>
+
+                    <div class="appointment-visual reveal-right">
+                        <div class="visual-container">
+                            <div class="visual-arc"></div>
+                            <div class="circle-img circle-1">
+                                <img src="assets/image28.jpeg" alt="Soin Biona">
+                            </div>
+                            <div class="circle-img circle-2">
+                                <img src="assets/h.jpg" alt="Conseil Beauté">
+                            </div>
+                            <div class="circle-img circle-3">
+                                <img src="assets/image22.jpeg" alt="Texture Naturelle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section light-bg">
+            <div class="container text-center">
+                <h2 class="section-title">Ils nous font confiance</h2>
+                <div class="grid grid-3-cols mt-4">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card reveal">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p>"Des produits d'une qualité rare. Ma peau n'a jamais été aussi belle depuis que j'utilise les
+                            soins Biona."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Aissatou Diop</h4>
+                                <span>Cliente fidèle</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p>"Une marque qui honore nos racines sénégalaises avec une exigence de qualité exceptionnelle."
+                        </p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Moussa Ndiaye</h4>
+                                <span>Consommateur engagé</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p>"Le savon noir Biona est une merveille. Une douceur incroyable pour la peau et un parfum
+                            divin."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Khady Sy</h4>
+                                <span>Naturopathe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Biona<span>Products</span></a>
+                    <p>Votre partenaire bien-être au quotidien, dans le respect total de la nature.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/biona_products/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="products.html">Produits</a></li>
+                        <li><a href="engagements.html">Engagements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i data-lucide="mail"></i> contact@bionaproduct.com</li>
+                        <li><i data-lucide="phone"></i> +221 77 169 30 11</li>
+                        <li><i data-lucide="map-pin"></i> Dakar, Sénégal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Biona Products. Tous droits réservés. <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
