@@ -1631,7 +1631,9 @@ footer {
         gap: 20px;
         text-align: center;
     }
-}/* --- PRODUCT MODAL --- */
+}
+
+/* --- PRODUCT MODAL --- */
 .modal {
     position: fixed;
     top: 0;
@@ -1861,4 +1863,121 @@ footer {
     .modal-details h2 {
         font-size: 2rem;
     }
+}
+
+/* --- MOBILE SPECIFIC FIXES (<480px) --- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    /* Typography Reductions */
+    h1,
+    .page-hero h1,
+    .boutique-hero .hero-content h1,
+    .panel-center h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .editorial-title {
+        font-size: 2.5rem;
+        top: -20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    /* Layout Adjustments */
+    .grid {
+        gap: 1.5rem;
+    }
+
+    .product-img {
+        height: 250px;
+    }
+
+    .category-tabs {
+        padding: 15px 10px;
+        width: 100%;
+        margin-top: -30px;
+        border-radius: 20px;
+    }
+
+    .category-list-tabs li a {
+        padding: 10px 20px;
+        font-size: 0.75rem;
+    }
+
+    .boutique-toolbar {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .sort-select {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .modal-details {
+        padding: 20px;
+    }
+
+    .modal-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-image {
+        height: 250px;
+    }
+}
+
+/* --- PAGINATION STYLES --- */
+.pagination-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--dark);
+    transition: var(--transition);
+}
+
+.pagination-btn:hover,
+.pagination-btn.active {
+    background: var(--secondary);
+    color: var(--white);
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.2);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    background: #f5f5f5;
+    color: #ccc;
 }
