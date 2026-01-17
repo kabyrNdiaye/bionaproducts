@@ -1266,40 +1266,45 @@ footer {
     #nav-menu {
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 80%;
+        left: 0;
+        width: 100%;
         height: 100vh;
         background: var(--white);
-        padding: 100px 40px;
-        /* Increased padding to clear header */
-        transition: 0.5s;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        padding: 100px 20px;
         z-index: 5000;
-        /* Force on top of everything */
-        display: flex;
+        display: none;
+        /* Hidden by default */
         flex-direction: column;
+        align-items: center;
+        /* Center items */
         overflow-y: auto;
     }
 
     #nav-menu.active {
-        right: 0;
+        display: flex;
+        /* Show when active */
     }
 
     #mobile-menu-toggle {
         display: block;
         position: relative;
         z-index: 5001;
-        /* Ensure button stays clickable above menu */
     }
 
     #nav-menu ul {
         flex-direction: column;
         gap: 2rem;
+        text-align: center;
+        width: 100%;
     }
 
     #nav-menu ul li a {
-        color: var(--text-main) !important;
-        font-size: 1.2rem;
+        color: var(--dark) !important;
+        /* Force dark color */
+        font-size: 1.5rem;
+        /* Larger text */
+        display: block;
+        padding: 10px;
     }
 
     .grid-2-cols,
@@ -1902,8 +1907,7 @@ footer {
     .container {
         padding: 0 1.5rem;
         width: 100%;
-        overflow: hidden;
-        /* Prevent spillover */
+        /* removed overflow hidden to prevent clipping */
     }
 
     .section {
