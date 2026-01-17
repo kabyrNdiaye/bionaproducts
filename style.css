@@ -1867,20 +1867,43 @@ footer {
 
 /* --- MOBILE SPECIFIC FIXES (<480px) --- */
 @media (max-width: 480px) {
+
+    /* Critical Fix: Ensure Navbar is visible */
+    #main-header {
+        position: fixed;
+        /* Force fixed to stay on top */
+        background-color: var(--white);
+        /* Ensure background is solid */
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        top: 0;
+    }
+
+    body {
+        padding-top: 80px;
+        /* Push content down so header doesn't cover it */
+        overflow-x: hidden;
+        /* Prevent horizontal scroll */
+    }
+
     .container {
-        padding: 0 1rem;
+        padding: 0 1.5rem;
+        width: 100%;
+        overflow: hidden;
+        /* Prevent spillover */
     }
 
     .section {
-        padding: 50px 0;
+        padding: 40px 0;
     }
 
-    /* Typography Reductions */
+    /* Reduce hero text size significantly to prevent layout breaking */
     h1,
     .page-hero h1,
     .boutique-hero .hero-content h1,
     .panel-center h1 {
-        font-size: 2.2rem !important;
+        font-size: 2rem !important;
+        line-height: 1.2;
     }
 
     .editorial-title {
