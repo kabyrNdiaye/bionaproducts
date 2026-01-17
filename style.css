@@ -1930,7 +1930,11 @@ footer {
 
     /* Layout Adjustments */
     .grid {
-        gap: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        /* Force single column */
+        gap: 2rem;
+        width: 100%;
     }
 
     .product-img {
@@ -1974,6 +1978,15 @@ footer {
 
     .modal-image {
         height: 250px;
+    }
+
+    /* CRITICAL FIX: Disable scroll animations on mobile to prevent blank screen */
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
     }
 }
 
